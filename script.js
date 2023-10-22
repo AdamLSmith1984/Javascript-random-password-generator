@@ -103,7 +103,7 @@ const generatePassword = function () {
         for (var i = 0, n = characters.length; i < length; i++) {
             result += characters.charAt(Math.floor(Math.random() * n));
         }
-        window.alert("Your new password is" + result);
+        window.alert("Your new password is: " + result);
         return result;
     }
 
