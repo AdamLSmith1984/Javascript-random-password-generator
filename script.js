@@ -85,21 +85,21 @@ const generatePassword = function () {
     window.alert("Generating password.");
 
     function makePassword() {
-        var characters = "";
+        let characters = "";
         if (passwordCriteria.lowercase === true) {
-            characters = "abcdefghijklmnopqrstuvwxyz";
+            characters += "abcdefghijklmnopqrstuvwxyz";
         }
         if (passwordCriteria.uppercase === true) {
-            characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         }
         if (passwordCriteria.numeric === true) {
-            characters = "0123456789";
+            characters += "0123456789";
         }
         if (passwordCriteria.specialCharacters === true) {
-            characters = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+            characters += "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
         }
-        var result = "";
-        var length = passwordCriteria.length;
+        let result = "";
+        let length = passwordCriteria.length;
         for (var i = 0, n = characters.length; i < length; i++) {
             result += characters.charAt(Math.floor(Math.random() * n));
         }
@@ -112,8 +112,8 @@ const generatePassword = function () {
 
 // Write password to the #password input
 function writePassword() {
-    var password = generatePassword();
-    var passwordText = document.querySelector("#password");
+    let password = generatePassword();
+    let passwordText = document.querySelector("#password");
 
     passwordText.value = password;
 
