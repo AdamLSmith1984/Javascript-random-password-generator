@@ -25,4 +25,4 @@
 
 [Github Repo](https://github.com/AdamLSmith1984/Javascript-random-password-generator.git)
 
-[Deployed GitHub-Pages Site]()
+[Deployed GitHub-Pages Site](https://adamlsmith1984.github.io/Javascript-random-password-generator/)
